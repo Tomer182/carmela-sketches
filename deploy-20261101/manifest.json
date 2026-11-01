@@ -1,0 +1,87 @@
+{
+ "pages": [
+  {
+   "file": "index.html",
+   "id": 9,
+   "slug": "home",
+   "title": "כרמלה בשרים",
+   "template": "elementor_canvas"
+  },
+  {
+   "file": "about.html",
+   "id": 670,
+   "slug": "about",
+   "title": "מי אנחנו",
+   "template": "elementor_canvas"
+  },
+  {
+   "file": "restaurant.html",
+   "id": 673,
+   "slug": "restaurant",
+   "title": "המסעדה",
+   "template": "elementor_canvas"
+  },
+  {
+   "file": "menu.html",
+   "id": 494,
+   "slug": "menu",
+   "title": "התפריט",
+   "template": "elementor_canvas"
+  },
+  {
+   "file": "contact.html",
+   "id": 539,
+   "slug": "contact",
+   "title": "הגעה ושעות",
+   "template": "elementor_canvas"
+  },
+  {
+   "file": "events-landing",
+   "id": 495,
+   "slug": "events",
+   "title": "אירועים בכרמלה",
+   "template": "elementor_canvas"
+  }
+ ],
+ "assets": {
+  "292.webp": "https://tomer182.github.io/carmela-sketches/yaar-colors/assets/292.webp",
+  "295.webp": "https://tomer182.github.io/carmela-sketches/yaar-colors/assets/295.webp",
+  "302.webp": "https://tomer182.github.io/carmela-sketches/yaar-colors/assets/302.webp",
+  "308.webp": "https://tomer182.github.io/carmela-sketches/yaar-colors/assets/308.webp",
+  "310.webp": "https://tomer182.github.io/carmela-sketches/yaar-colors/assets/310.webp",
+  "316.webp": "https://tomer182.github.io/carmela-sketches/yaar-colors/assets/316.webp",
+  "317.webp": "https://tomer182.github.io/carmela-sketches/yaar-colors/assets/317.webp",
+  "318.webp": "https://tomer182.github.io/carmela-sketches/yaar-colors/assets/318.webp",
+  "325.webp": "https://tomer182.github.io/carmela-sketches/yaar-colors/assets/325.webp",
+  "329.webp": "https://tomer182.github.io/carmela-sketches/yaar-colors/assets/329.webp",
+  "340.webp": "https://tomer182.github.io/carmela-sketches/yaar-colors/assets/340.webp",
+  "355.webp": "https://tomer182.github.io/carmela-sketches/yaar-colors/assets/355.webp",
+  "357.webp": "https://tomer182.github.io/carmela-sketches/yaar-colors/assets/357.webp",
+  "361.webp": "https://tomer182.github.io/carmela-sketches/yaar-colors/assets/361.webp",
+  "371.webp": "https://tomer182.github.io/carmela-sketches/yaar-colors/assets/371.webp",
+  "373.webp": "https://tomer182.github.io/carmela-sketches/yaar-colors/assets/373.webp",
+  "ev-308.webp": "https://tomer182.github.io/carmela-sketches/events-landing/img/ev-308.webp",
+  "ev-310.webp": "https://tomer182.github.io/carmela-sketches/events-landing/img/ev-310.webp",
+  "ev-318.webp": "https://tomer182.github.io/carmela-sketches/events-landing/img/ev-318.webp",
+  "ev-329.webp": "https://tomer182.github.io/carmela-sketches/events-landing/img/ev-329.webp",
+  "ev-334.webp": "https://tomer182.github.io/carmela-sketches/events-landing/img/ev-334.webp",
+  "ev-340.webp": "https://tomer182.github.io/carmela-sketches/events-landing/img/ev-340.webp",
+  "ev-345.webp": "https://tomer182.github.io/carmela-sketches/events-landing/img/ev-345.webp",
+  "ev-355.webp": "https://tomer182.github.io/carmela-sketches/events-landing/img/ev-355.webp",
+  "ev-357.webp": "https://tomer182.github.io/carmela-sketches/events-landing/img/ev-357.webp",
+  "ev-361.webp": "https://tomer182.github.io/carmela-sketches/events-landing/img/ev-361.webp",
+  "ev-366.webp": "https://tomer182.github.io/carmela-sketches/events-landing/img/ev-366.webp",
+  "ev-369.webp": "https://tomer182.github.io/carmela-sketches/events-landing/img/ev-369.webp",
+  "ev-370.webp": "https://tomer182.github.io/carmela-sketches/events-landing/img/ev-370.webp",
+  "ev-ext-parking2.webp": "https://tomer182.github.io/carmela-sketches/events-landing/img/ev-ext-parking2.webp",
+  "ext-parking2.webp": "https://tomer182.github.io/carmela-sketches/yaar-colors/assets/ext-parking2.webp",
+  "logo-brown.png": "https://tomer182.github.io/carmela-sketches/yaar-colors/assets/logo-brown.png",
+  "logo-cream.png": "https://tomer182.github.io/carmela-sketches/yaar-colors/assets/logo-cream.png",
+  "place-desk.mp4": "https://tomer182.github.io/carmela-sketches/v/place-desk.mp4",
+  "place-mob.mp4": "https://tomer182.github.io/carmela-sketches/v/place-mob.mp4",
+  "reel-narr.mp4": "https://tomer182.github.io/carmela-sketches/yaar-colors/assets/reel-narr.mp4",
+  "reel-narr.webp": "https://tomer182.github.io/carmela-sketches/yaar-colors/assets/reel-narr.webp",
+  "reel-steak.mp4": "https://tomer182.github.io/carmela-sketches/yaar-colors/assets/reel-steak.mp4",
+  "reel-steak.webp": "https://tomer182.github.io/carmela-sketches/yaar-colors/assets/reel-steak.webp"
+ }
+}
