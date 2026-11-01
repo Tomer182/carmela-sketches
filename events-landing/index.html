@@ -1,0 +1,536 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>אירועים בכרמלה בשרים</title>
+<meta name="description" content="אירועים בכרמלה בשרים, אור יהודה. ימי הולדת, מפגשים משפחתיים ואירועי חברה, עד 100 אורחים. כשר, חניה חינם.">
+<link rel="preload" href="../yaar-colors/assets/heebo.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../yaar-colors/assets/tomaso-a11y.css">
+<style>
+@font-face{font-family:Heebo;font-weight:100 900;font-display:swap;src:url(../yaar-colors/assets/heebo.woff2) format('woff2');unicode-range:U+0590-05FF,U+200C-2010,U+20AA,U+25CC,U+FB1D-FB4F}
+@font-face{font-family:Heebo;font-weight:100 900;font-display:swap;src:url(../yaar-colors/assets/heebo-latin.woff2) format('woff2');unicode-range:U+0000-024F}
+:root{
+  --olive:#475443;--olive-dark:#3A4637;--olive-deep:#2E382C;
+  --sand:#E8E1D9;--sand-2:#D9D2CA;--sand-light:#F4F0EA;
+  --white:#FFFFFF;--ink:#4B4542;--ink-soft:#6F6965;--line:#E0D9D0;
+  --gutter:max(20px,min(6vw,96px));
+  --head:84px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:90px;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--white);color:var(--ink);font-family:Heebo,Arial,sans-serif;font-size:1.0625rem;line-height:1.75;font-weight:300;overflow-x:hidden}
+img,video{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+h1,h2,h3,p,figure,blockquote,ul{margin:0;padding:0}
+ul{list-style:none}
+button,input,select{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--sand-2);outline-offset:4px}
+bdi{direction:ltr;unicode-bidi:isolate;white-space:nowrap}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+.wrap{width:100%;max-width:1320px;margin-inline:auto;padding-inline:var(--gutter)}
+
+/* heading system: thin with one bold word, brush stroke under it (Yaar language) */
+.h2{font-weight:200;font-size:clamp(2.1rem,4.2vw,3.6rem);line-height:1.15;letter-spacing:-.02em;text-wrap:balance}
+.h2 b{font-weight:700;position:relative;display:inline-block;z-index:0}
+.h2 b::after{content:"";position:absolute;inset-inline:-.12em;bottom:.02em;height:.38em;z-index:-1;
+  background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 24' preserveAspectRatio='none'%3E%3Cpath d='M3 15c28-6 61-9 98-8 33 1 63 3 96-2-27 7-61 11-97 10-35-1-66-1-97 6z' fill='%23D9D2CA'/%3E%3C/svg%3E") no-repeat center/100% 100%}
+.on-dark .h2 b::after{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 24' preserveAspectRatio='none'%3E%3Cpath d='M3 15c28-6 61-9 98-8 33 1 63 3 96-2-27 7-61 11-97 10-35-1-66-1-97 6z' fill='%23667462'/%3E%3C/svg%3E")}
+.kicker{font-size:.9rem;font-weight:500;letter-spacing:.04em;color:var(--olive);margin-bottom:18px;display:flex;align-items:center;gap:14px}
+.kicker::before{content:"";width:34px;height:1px;background:currentColor}
+.lead{font-size:clamp(1.05rem,1.3vw,1.2rem);color:var(--ink-soft);max-width:52ch}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:54px;padding:0 30px;font-weight:500;font-size:1rem;letter-spacing:.02em;transition:background .25s,color .25s,transform .25s}
+.btn svg{width:20px;height:20px}
+.btn-sand{background:var(--sand);color:var(--olive-deep)}
+.btn-sand:hover{background:var(--white)}
+.btn-olive{background:var(--olive);color:var(--white)}
+.btn-olive:hover{background:var(--olive-dark)}
+.btn-line{border:1px solid currentColor}
+.link-u{border-bottom:1px solid currentColor;padding-bottom:2px}
+
+/* header */
+.top{position:fixed;inset:0 0 auto;z-index:50;height:var(--head);padding-top:env(safe-area-inset-top,0px);transition:background .35s,box-shadow .35s,height .35s;color:var(--white)}
+.top .wrap{height:100%;display:flex;align-items:center;gap:28px}
+.top .logo img{height:54px;width:auto;transition:height .35s}
+.top nav{display:flex;gap:30px;margin-inline-start:auto;font-size:.98rem;font-weight:400}
+.top nav a{position:relative;padding-block:6px}
+.top nav a::after{content:"";position:absolute;inset-inline:0;bottom:0;height:1px;background:currentColor;transform:scaleX(0);transition:transform .3s}
+.top nav a:hover::after,.top nav a.on::after{transform:scaleX(1)}
+.top .btn{min-height:44px;padding:0 22px;font-size:.95rem}
+.top.scrolled{background:var(--olive);box-shadow:0 8px 30px rgba(0,0,0,.12);height:70px}
+.top.scrolled .logo img{height:44px}
+
+/* hero */
+.hero{position:relative;height:100svh;min-height:620px;color:var(--white);display:grid;place-items:center;overflow:hidden;isolation:isolate}
+.hero video,.hero .poster{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(30,38,29,.55) 0%,rgba(30,38,29,.28) 40%,rgba(30,38,29,.62) 100%)}
+.hero-in{text-align:center;padding-inline:var(--gutter);display:flex;flex-direction:column;align-items:center}
+.emblem{width:clamp(150px,17vw,210px);aspect-ratio:1;border-radius:50%;border:1px solid rgba(255,255,255,.55);display:grid;place-items:center;position:relative;margin-bottom:34px;backdrop-filter:blur(2px);background:rgba(46,56,44,.18)}
+.emblem::before{content:"";position:absolute;inset:9px;border-radius:50%;border:1px solid rgba(255,255,255,.25)}
+.emblem img{width:66%;height:auto}
+.hero h1{font-weight:200;font-size:clamp(2.6rem,6.4vw,5.6rem);line-height:1.02;letter-spacing:-.025em}
+.hero h1 b{font-weight:700}
+.hero .sub{margin-top:18px;font-size:clamp(1rem,1.4vw,1.2rem);letter-spacing:.03em;font-weight:400;opacity:.92}
+.hero .ctas{margin-top:38px;display:flex;flex-wrap:wrap;gap:14px 26px;align-items:center;justify-content:center}
+.hero .tel{font-weight:400;font-size:1.02rem}
+.scroll-cue{position:absolute;bottom:28px;inset-inline:0;margin-inline:auto;width:26px;height:42px;border:1px solid rgba(255,255,255,.7);border-radius:14px}
+.scroll-cue::after{content:"";position:absolute;top:8px;inset-inline:0;margin-inline:auto;width:2px;height:8px;background:#fff;border-radius:2px;animation:cue 1.8s infinite}
+@keyframes cue{0%{opacity:0;transform:translateY(0)}40%{opacity:1}100%{opacity:0;transform:translateY(12px)}}
+
+/* facts row: line icons in sand circles */
+.facts{padding-block:clamp(54px,6vw,84px);border-bottom:1px solid var(--line)}
+.facts ul{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.facts li{display:flex;flex-direction:column;align-items:center;text-align:center;gap:14px;padding-inline:8px;position:relative}
+.facts li+li::before{content:"";position:absolute;inset-inline-start:-12px;top:22%;height:56%;width:1px;background:var(--line)}
+.ico{width:96px;height:96px;border-radius:50%;background:var(--sand);display:grid;place-items:center;color:var(--olive)}
+.ico svg{width:46px;height:46px;fill:none;stroke:currentColor;stroke-width:1.15;stroke-linecap:round;stroke-linejoin:round}
+.facts strong{display:block;font-weight:600;font-size:1.12rem;color:var(--ink)}
+.facts span{font-size:.95rem;color:var(--ink-soft)}
+
+/* edge-to-edge split sections */
+.split{display:grid;grid-template-columns:1fr 1fr;min-height:min(86vh,820px)}
+.split .txt{display:flex;flex-direction:column;justify-content:center;padding:clamp(56px,7vw,120px) var(--gutter)}
+.split .txt>*{max-width:560px}
+.split .pic{position:relative;overflow:hidden;min-height:420px}
+.split .pic img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 1.4s cubic-bezier(.2,.7,.2,1)}
+.split .pic:hover img{transform:scale(1.04)}
+.split.rev .pic{order:-1}
+.split .lead{margin-top:22px}
+.split .actions{margin-top:34px;display:flex;flex-wrap:wrap;gap:14px 24px;align-items:center}
+.occasions{margin-top:30px;border-top:1px solid var(--line)}
+.occasions li{display:flex;align-items:baseline;gap:20px;padding:18px 0;border-bottom:1px solid var(--line)}
+.occasions .n{font-weight:200;font-size:1.9rem;color:var(--sand-2);min-width:2ch;font-variant-numeric:tabular-nums}
+.occasions b{font-weight:600;font-size:1.2rem}
+.occasions span{display:block;color:var(--ink-soft);font-size:.96rem}
+.badge-photo{position:absolute;inset-block-end:28px;inset-inline-start:28px;background:var(--white);color:var(--ink);padding:16px 20px;display:flex;gap:14px;align-items:center;box-shadow:0 18px 40px rgba(0,0,0,.18)}
+.badge-photo strong{font-size:2rem;font-weight:700;line-height:1;color:var(--olive)}
+.badge-photo span{font-size:.88rem;line-height:1.35}
+
+/* wave + sand band: how it works */
+.wave{display:block;width:100%;height:clamp(40px,6vw,90px);color:var(--sand-light)}
+.band{background:var(--sand-light);padding-bottom:clamp(70px,8vw,120px)}
+.band-head{text-align:center;display:flex;flex-direction:column;align-items:center;margin-bottom:clamp(44px,5vw,70px)}
+.band-head .kicker::after{content:"";width:34px;height:1px;background:currentColor}
+.band-head .lead{margin-top:16px;text-align:center}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(24px,4vw,60px);position:relative}
+.steps::before{content:"";position:absolute;top:48px;inset-inline:16%;height:1px;background:repeating-linear-gradient(90deg,var(--olive) 0 6px,transparent 6px 14px);opacity:.45}
+.step{text-align:center;display:flex;flex-direction:column;align-items:center;position:relative}
+.step .ico{background:var(--white);border:1px solid var(--sand-2);position:relative}
+.step .num{position:absolute;top:-4px;inset-inline-end:-4px;width:32px;height:32px;border-radius:50%;background:var(--olive);color:#fff;font-size:.9rem;font-weight:600;display:grid;place-items:center}
+.step h3{margin-top:22px;font-weight:600;font-size:1.25rem}
+.step p{margin-top:8px;color:var(--ink-soft);max-width:30ch}
+
+/* food strip inside band */
+.food{margin-top:clamp(60px,7vw,100px);display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(30px,5vw,80px);align-items:center}
+.food-pics{display:grid;grid-template-columns:1fr 1fr;gap:14px;position:relative}
+.food-pics figure{overflow:hidden}
+.food-pics img{width:100%;height:100%;object-fit:cover;aspect-ratio:4/5}
+.food-pics figure:nth-child(2){margin-top:60px}
+.food-list{margin-top:26px;display:grid;gap:14px}
+.food-list li{display:flex;gap:14px;align-items:flex-start}
+.food-list li::before{content:"";flex:0 0 9px;height:9px;margin-top:10px;border-radius:50%;background:var(--olive)}
+
+/* gallery: 4 columns, no gaps, edge to edge */
+.gallery{display:grid;grid-template-columns:repeat(4,1fr)}
+.gallery figure{position:relative;overflow:hidden;aspect-ratio:1/1}
+.gallery img{width:100%;height:100%;object-fit:cover;transition:transform 1s cubic-bezier(.2,.7,.2,1),filter .6s}
+.gallery figure::after{content:"";position:absolute;inset:0;background:rgba(46,56,44,.0);transition:background .5s}
+.gallery figure:hover img{transform:scale(1.06)}
+.gallery figure:hover::after{background:rgba(46,56,44,.18)}
+.gallery-head{padding-block:clamp(64px,7vw,100px) clamp(34px,4vw,50px);display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap}
+
+/* review */
+.review{position:relative;color:var(--white);padding-block:clamp(80px,10vw,150px);isolation:isolate;overflow:hidden;text-align:center}
+.review>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
+.review::after{content:"";position:absolute;inset:0;background:rgba(46,56,44,.82);z-index:-1}
+.review .q{font-size:5rem;line-height:.6;font-weight:200;color:var(--sand-2);height:44px}
+.review blockquote{font-weight:200;font-size:clamp(1.5rem,3vw,2.5rem);line-height:1.4;max-width:30ch;margin:20px auto 0;text-wrap:balance}
+.review cite{display:block;margin-top:28px;font-style:normal;font-size:.95rem;letter-spacing:.08em;opacity:.85}
+.review .stars{display:flex;gap:4px;justify-content:center;margin-top:12px;color:var(--sand)}
+.review .stars svg{width:18px;height:18px;fill:currentColor}
+.review a{display:inline-block;margin-top:26px}
+
+/* form section */
+.contact{position:relative;isolation:isolate;padding-block:clamp(70px,9vw,130px);overflow:hidden}
+.contact>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
+.contact::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(46,56,44,.25),rgba(46,56,44,.86) 55%);z-index:-1}
+.contact .wrap{display:grid;grid-template-columns:1fr minmax(320px,520px);gap:clamp(30px,5vw,80px);align-items:center}
+.contact .side{color:var(--white)}
+.contact .side .lead{color:rgba(255,255,255,.86);margin-top:18px}
+.contact .side .kicker{color:var(--sand)}
+.contact .who{margin-top:30px;display:flex;align-items:center;gap:16px}
+.contact .who .ring{width:64px;height:64px;border-radius:50%;border:1px solid rgba(255,255,255,.5);display:grid;place-items:center;font-size:1.5rem;font-weight:300}
+.contact .who strong{display:block;font-weight:600;font-size:1.15rem}
+.contact .who span{opacity:.85;font-size:.95rem}
+.card{background:var(--white);padding:clamp(28px,3.4vw,46px);box-shadow:0 30px 70px rgba(0,0,0,.25)}
+.card h3{font-weight:300;font-size:1.7rem;line-height:1.25}
+.card h3 b{font-weight:700}
+.card .note{margin-top:8px;font-size:.92rem;color:var(--ink-soft)}
+.field{margin-top:18px;display:flex;flex-direction:column;gap:6px}
+.field label{font-size:.9rem;font-weight:500}
+.field input,.field select{height:52px;border:0;border-bottom:1px solid #CFC7BC;background:var(--sand-light);padding:0 14px;font-size:1rem;border-radius:0;appearance:none;-webkit-appearance:none}
+.field input:focus,.field select:focus{outline:0;border-bottom:2px solid var(--olive);background:#fff}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:4px}
+.chips label{cursor:pointer}
+.chips input{position:absolute;opacity:0;pointer-events:none}
+.chips span{display:inline-block;padding:9px 16px;border:1px solid #CFC7BC;font-size:.92rem;transition:all .2s}
+.chips input:checked+span{background:var(--olive);border-color:var(--olive);color:#fff}
+.chips input:focus-visible+span{outline:3px solid var(--sand-2);outline-offset:2px}
+.card .btn{width:100%;margin-top:26px}
+.card .alt{margin-top:16px;text-align:center;font-size:.95rem;color:var(--ink-soft)}
+.card .alt a{color:var(--olive);font-weight:600}
+.ready{margin-top:14px;font-size:.92rem;color:var(--olive);font-weight:500;text-align:center}
+
+/* footer */
+.foot{position:relative;isolation:isolate;color:#EEF0EA;overflow:hidden}
+.foot>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;filter:grayscale(.3)}
+.foot::after{content:"";position:absolute;inset:0;background:rgba(36,44,34,.9);z-index:-1}
+.foot .wrap{display:grid;grid-template-columns:1.2fr 1fr 1fr 1fr;gap:40px;padding-block:clamp(60px,7vw,96px)}
+.foot img.flogo{height:78px;width:auto}
+.foot h4{margin:0 0 14px;font-weight:600;font-size:1rem;color:var(--sand)}
+.foot p,.foot li{font-size:.96rem;line-height:1.85;opacity:.9}
+.foot .hrs li{display:flex;justify-content:space-between;gap:12px;border-bottom:1px solid rgba(255,255,255,.12);padding-block:6px}
+.foot .nav-btns{display:flex;gap:10px;margin-top:16px;flex-wrap:wrap}
+.foot .nav-btns a{border:1px solid rgba(255,255,255,.4);padding:8px 16px;font-size:.9rem}
+.foot .nav-btns a:hover{background:rgba(255,255,255,.1)}
+.bar{background:var(--olive-deep);color:rgba(255,255,255,.7);font-size:.85rem;padding-block:16px;padding-bottom:calc(16px + env(safe-area-inset-bottom,0px))}
+.bar .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+
+/* floating round buttons (Yaar) */
+.float{position:fixed;inset-inline-start:calc(18px + env(safe-area-inset-left,0px));bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:40;display:flex;flex-direction:column;gap:10px}
+.float a{width:56px;height:56px;border-radius:50%;background:var(--olive);color:#fff;display:grid;place-items:center;box-shadow:0 10px 26px rgba(0,0,0,.25);transition:transform .2s}
+.float a:hover{transform:scale(1.07)}
+.float svg{width:26px;height:26px;fill:currentColor}
+
+/* mobile sticky CTA */
+.mcta{display:none}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(26px);transition:opacity .9s ease,transform .9s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}.scroll-cue::after{animation:none}*{scroll-behavior:auto}}
+
+@media (max-width:1060px){
+  .top nav{display:none}
+  .top .btn{margin-inline-start:auto}
+  .facts ul{grid-template-columns:repeat(2,1fr);row-gap:38px}
+  .facts li:nth-child(3)::before{display:none}
+  .foot .wrap{grid-template-columns:1fr 1fr}
+}
+@media (max-width:820px){
+  :root{--head:70px}
+  .top .logo img{height:44px}
+  .split{grid-template-columns:1fr;min-height:0}
+  .split .pic{min-height:0;aspect-ratio:4/3.4}
+  .split.rev .pic{order:0}
+  .steps{grid-template-columns:1fr;gap:38px}
+  .steps::before{top:48px;bottom:48px;inset-inline:auto;inset-inline-start:50%;width:1px;height:auto;background:repeating-linear-gradient(180deg,var(--olive) 0 6px,transparent 6px 14px)}
+  .step{background:var(--sand-light);padding-block:4px}
+  .food{grid-template-columns:1fr}
+  .gallery{grid-template-columns:repeat(2,1fr)}
+  .contact .wrap{grid-template-columns:1fr}
+  .contact::after{background:rgba(46,56,44,.86)}
+  .foot .wrap{grid-template-columns:1fr}
+  .float{display:none}
+  .mcta{display:flex;position:fixed;inset:auto 0 0;z-index:45;background:var(--olive);padding:10px max(16px,env(safe-area-inset-left,0px)) calc(10px + env(safe-area-inset-bottom,0px));gap:10px;box-shadow:0 -8px 24px rgba(0,0,0,.15);transform:translateY(110%);transition:transform .35s}
+  .mcta.show{transform:none}
+  .mcta a{flex:1;min-height:48px;padding:0 12px;white-space:nowrap}
+  .mcta a:first-child{flex:1.8}
+  .mcta a.wa{flex:0 0 52px;padding:0}
+  .mcta a.wa svg{width:24px;height:24px;fill:currentColor}
+  .bar{padding-bottom:calc(84px + env(safe-area-inset-bottom,0px))}
+}
+@media (max-width:480px){
+  .hero .sub{font-size:.98rem}
+  .badge-photo{inset-block-end:16px;inset-inline-start:16px;padding:12px 14px}
+  .row2{grid-template-columns:1fr}
+  .ico{width:84px;height:84px}
+  .ico svg{width:40px;height:40px}
+  .facts ul{gap:16px;row-gap:32px}
+  .facts li+li::before{display:none}
+}
+</style>
+</head>
+<body>
+<a class="sr-only" href="#main">דלגו לתוכן</a>
+
+<header class="top" id="top">
+  <div class="wrap">
+    <a class="logo" href="#main" aria-label="כרמלה בשרים, לראש הדף"><img src="../yaar-colors/assets/logo-cream.png" alt="כרמלה בשרים, כשר, גריל ישראלי"></a>
+    <nav aria-label="ניווט בדף">
+      <a href="#hosting">האירוח</a>
+      <a href="#how">איך מתאמים</a>
+      <a href="#gallery">החלל</a>
+      <a href="#review">ביקורות</a>
+      <a href="#arrive">הגעה</a>
+    </nav>
+    <a class="btn btn-sand" href="#contact">לתיאום אירוע</a>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" aria-label="אירועים בכרמלה">
+    <img class="poster" src="../a/318.jpg" alt="" aria-hidden="true">
+    <video id="heroVid" autoplay muted loop playsinline preload="metadata" poster="../a/318.jpg" aria-hidden="true"></video>
+    <div class="hero-in">
+      <div class="emblem rv"><img src="../yaar-colors/assets/logo-cream.png" alt=""></div>
+      <h1 class="rv">אירועים <b>בכרמלה</b></h1>
+      <p class="sub rv">ימי הולדת · מפגשים משפחתיים · אירועי חברה</p>
+      <div class="ctas rv">
+        <a class="btn btn-sand" href="#contact">לתיאום אירוע עם משה</a>
+        <a class="tel link-u" href="tel:+97235407787">או חייגו <bdi>03-540-7787</bdi></a>
+      </div>
+    </div>
+    <span class="scroll-cue" aria-hidden="true"></span>
+  </section>
+
+  <section class="facts" aria-label="בקצרה">
+    <div class="wrap">
+      <ul>
+        <li class="rv">
+          <span class="ico"><svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="17" cy="15" r="6"/><circle cx="32" cy="17" r="5"/><path d="M5 38c1-8 6-12 12-12s11 4 12 12"/><path d="M26 28c2-2 4-3 6-3 5 0 9 4 10 11"/></svg></span>
+          <div><strong>עד 100 אורחים</strong><span>בתיאום מראש</span></div>
+        </li>
+        <li class="rv">
+          <span class="ico"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 5l15 6v11c0 10-6 17-15 21-9-4-15-11-15-21V11z"/><path d="M17 24l5 5 9-10"/></svg></span>
+          <div><strong>כשר</strong><span>כשרות הרבנות אור יהודה</span></div>
+        </li>
+        <li class="rv">
+          <span class="ico"><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="8" y="8" width="32" height="32" rx="7"/><path d="M19 34V15h7a6 6 0 010 12h-7"/></svg></span>
+          <div><strong>חניה חינם בשפע</strong><span>ממש ליד המסעדה</span></div>
+        </li>
+        <li class="rv">
+          <span class="ico"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M10 12h28v19H22l-8 7v-7h-4z"/><path d="M17 20h14M17 25h9"/></svg></span>
+          <div><strong>תיאום אישי</strong><span>מול משה מהמסעדה</span></div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="split" id="hosting">
+    <div class="txt">
+      <p class="kicker rv">האירוח בכרמלה</p>
+      <h2 class="h2 rv">כולם סביב <b>שולחן אחד</b></h2>
+      <p class="lead rv">לאפות חמות מהטאבון, סלטי הבית על כל השולחן, ונתחים ושיפודים שיוצאים מהגריל ישר אליכם. אירוח בשפע, באווירה של בית.</p>
+      <ul class="occasions rv">
+        <li><span class="n">01</span><div><b>ימי הולדת</b><span>מהגיל הראשון ועד השמונים</span></div></li>
+        <li><span class="n">02</span><div><b>מפגשים משפחתיים</b><span>כל המשפחה, שולחן ארוך אחד</span></div></li>
+        <li><span class="n">03</span><div><b>אירועי חברה</b><span>ערב צוות, הרמת כוסית, סגירת שנה</span></div></li>
+      </ul>
+      <div class="actions rv">
+        <a class="btn btn-olive" href="#contact">בדיקת תאריך פנוי</a>
+      </div>
+    </div>
+    <figure class="pic">
+      <img src="../a/361.jpg" alt="שולחן אירוח בכרמלה עם לאפות מהטאבון וסלטים" loading="lazy">
+    </figure>
+  </section>
+
+  <section class="split rev">
+    <div class="txt">
+      <p class="kicker rv">החלל</p>
+      <h2 class="h2 rv">מקום שנבנה <b>לחגוג בו</b></h2>
+      <p class="lead rv">אולם מואר עם תקרת אורות, קירות אבן חמים וגריל פתוח שרואים מכל שולחן. מסדרים את הישיבה לפי האירוע שלכם, משולחן משפחתי ארוך ועד ערב צוות.</p>
+      <div class="actions rv">
+        <a class="link-u" href="#gallery">לצפייה בחלל ובאירוח</a>
+      </div>
+    </div>
+    <figure class="pic">
+      <img src="../a/308.jpg" alt="אולם כרמלה בשרים ערוך לאירוע" loading="lazy">
+      <div class="badge-photo"><strong>100</strong><span>אורחים<br>לכל היותר</span></div>
+    </figure>
+  </section>
+
+  <svg class="wave" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true"><path d="M0 60C180 20 360 0 540 18s360 66 540 60 270-40 360-48v60H0z" fill="currentColor"/></svg>
+  <section class="band" id="how">
+    <div class="wrap">
+      <div class="band-head">
+        <p class="kicker rv">איך מתאמים</p>
+        <h2 class="h2 rv">שלושה צעדים <b>לאירוע</b></h2>
+        <p class="lead rv">בלי טפסים ארוכים. מדברים עם משה, והוא דואג לכל השאר.</p>
+      </div>
+      <div class="steps">
+        <div class="step rv">
+          <span class="ico"><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="8" y="11" width="32" height="29" rx="3"/><path d="M8 19h32M16 6v9M32 6v9M16 27h5M27 27h5M16 33h5"/></svg><span class="num">1</span></span>
+          <h3>שולחים פרטים</h3>
+          <p>תאריך, מספר אורחים ומה חוגגים. בטופס למטה או בטלפון.</p>
+        </div>
+        <div class="step rv">
+          <span class="ico"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M10 34c4-12 24-12 28 0z"/><path d="M6 34h36M24 22v-4M21 18h6"/><path d="M14 40h20"/></svg><span class="num">2</span></span>
+          <h3>בוחרים תפריט</h3>
+          <p>משה בודק זמינות, ובוחרים יחד את התפריט לאירוע.</p>
+        </div>
+        <div class="step rv">
+          <span class="ico"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 6l3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z"/><path d="M12 42c2-6 7-9 12-9s10 3 12 9"/></svg><span class="num">3</span></span>
+          <h3>מגיעים לחגוג</h3>
+          <p>השולחן מסודר לפי האירוע שלכם. אתם רק מגיעים.</p>
+        </div>
+      </div>
+
+      <div class="food">
+        <div class="food-pics rv">
+          <figure><img src="../a/369.jpg" alt="מגש שיפודים מהגריל" loading="lazy"></figure>
+          <figure><img src="../a/355.jpg" alt="שולחן סלטים ותוספות" loading="lazy"></figure>
+        </div>
+        <div>
+          <p class="kicker rv">מה בתפריט</p>
+          <h2 class="h2 rv">הטעמים של כרמלה, <b>באירוע שלכם</b></h2>
+          <ul class="food-list rv">
+            <li>סלטי הבית, מגוון ובשפע על כל השולחן</li>
+            <li>לאפות חמות שיוצאות מהטאבון</li>
+            <li>שיפודים ונתחים מובחרים מהגריל</li>
+          </ul>
+          <p class="lead rv" style="margin-top:22px">את הרכב התפריט מתאמים עם משה לפי מספר האורחים והאירוע.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery" aria-label="החלל והאירוח בכרמלה">
+    <div class="wrap gallery-head">
+      <div>
+        <p class="kicker rv">מקרוב</p>
+        <h2 class="h2 rv">תראו איפה <b>חוגגים</b></h2>
+      </div>
+      <a class="btn btn-olive rv" href="#contact">אני רוצה לחגוג כאן</a>
+    </div>
+    <div class="gallery">
+      <figure><img src="../a/318.jpg" alt="אולם כרמלה עם תקרת האורות" loading="lazy"></figure>
+      <figure><img src="../a/370.jpg" alt="שיפודים מוגשים לשולחן" loading="lazy"></figure>
+      <figure><img src="../a/345.jpg" alt="הגריל הפתוח" loading="lazy"></figure>
+      <figure><img src="../a/366.jpg" alt="נתחים ותוספות על השולחן" loading="lazy"></figure>
+      <figure><img src="../a/329.jpg" alt="השולחנות ליד הבר" loading="lazy"></figure>
+      <figure><img src="../a/334.jpg" alt="בצק ללאפות ליד הטאבון" loading="lazy"></figure>
+      <figure><img src="../a/310.jpg" alt="החלל הפנימי של המסעדה" loading="lazy"></figure>
+      <figure><img src="../a/340.jpg" alt="חיתוך נתח על קרש עץ" loading="lazy"></figure>
+    </div>
+  </section>
+
+  <section class="review on-dark" id="review" aria-label="ביקורת מגוגל">
+    <img src="../a/357.jpg" alt="" aria-hidden="true" loading="lazy">
+    <div class="wrap">
+      <p class="q" aria-hidden="true">&ldquo;</p>
+      <blockquote class="rv">הלכנו לערב יום הולדת של אחותי ואבא שלי, חזי האלוף פינק אותנו ודאג לנו לארוחה מושלמת מהתחלה ועד הסוף!</blockquote>
+      <cite class="rv">אדר טויטו · ביקורת Google · 14.10.2026</cite>
+      <div class="stars" aria-label="ביקורת בגוגל"><svg viewBox="0 0 24 24"><path d="M12 2l3 7 7 .6-5.3 4.7 1.6 7.1L12 17.8 5.7 21.4l1.6-7.1L2 9.6 9 9z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 7 7 .6-5.3 4.7 1.6 7.1L12 17.8 5.7 21.4l1.6-7.1L2 9.6 9 9z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 7 7 .6-5.3 4.7 1.6 7.1L12 17.8 5.7 21.4l1.6-7.1L2 9.6 9 9z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 7 7 .6-5.3 4.7 1.6 7.1L12 17.8 5.7 21.4l1.6-7.1L2 9.6 9 9z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 7 7 .6-5.3 4.7 1.6 7.1L12 17.8 5.7 21.4l1.6-7.1L2 9.6 9 9z"/></svg></div>
+      <a class="link-u rv" href="https://maps.google.com/maps?cid=1078968960158689684" target="_blank" rel="noopener">לכל הביקורות בגוגל</a>
+    </div>
+  </section>
+
+  <section class="contact" id="contact" aria-label="תיאום אירוע">
+    <img src="../a/329.jpg" alt="" aria-hidden="true" loading="lazy">
+    <div class="wrap">
+      <div class="side">
+        <p class="kicker rv">מתכננים אירוע?</p>
+        <h2 class="h2 rv on-dark" style="color:#fff">בואו נדבר <b>על שלכם</b></h2>
+        <p class="lead rv">משה מרכז את האירועים בכרמלה. השאירו פרטים והוא יחזור אליכם עם תאריכים פנויים והצעת תפריט.</p>
+        <div class="who rv">
+          <span class="ring">מ</span>
+          <div><strong>משה, תיאום אירועים</strong><span>או חייגו למסעדה <a class="link-u" href="tel:+97235407787"><bdi>03-540-7787</bdi></a></span></div>
+        </div>
+      </div>
+      <form class="card rv" id="evForm" novalidate>
+        <h3>פרטי <b>האירוע שלכם</b></h3>
+        <p class="note">הפרטים נפתחים כהודעה מוכנה בוואטסאפ. שום דבר לא נשלח עד שאתם לוחצים שליחה.</p>
+        <div class="field"><label for="fName">השם שלכם</label><input id="fName" name="name" autocomplete="name" required></div>
+        <div class="row2">
+          <div class="field"><label for="fDate">תאריך משוער</label><input id="fDate" name="date" type="date"></div>
+          <div class="field"><label for="fGuests">מספר אורחים</label>
+            <select id="fGuests" name="guests"><option value="">בחרו</option><option>עד 20</option><option>20 עד 40</option><option>40 עד 70</option><option>70 עד 100</option></select></div>
+        </div>
+        <div class="field"><span style="font-size:.9rem;font-weight:500">מה חוגגים?</span>
+          <div class="chips" role="radiogroup" aria-label="סוג האירוע">
+            <label><input type="radio" name="type" value="יום הולדת"><span>יום הולדת</span></label>
+            <label><input type="radio" name="type" value="מפגש משפחתי"><span>מפגש משפחתי</span></label>
+            <label><input type="radio" name="type" value="אירוע חברה"><span>אירוע חברה</span></label>
+            <label><input type="radio" name="type" value="אחר"><span>אחר</span></label>
+          </div>
+        </div>
+        <button class="btn btn-olive" type="submit"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.3z"/></svg>שליחה בוואטסאפ</button>
+        <p class="ready" id="ready" hidden>ההודעה מוכנה. אם הוואטסאפ לא נפתח, חייגו <bdi>03-540-7787</bdi></p>
+        <p class="alt">מעדיפים לדבר? <a href="tel:+97235407787">חייגו למסעדה</a></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="foot" id="arrive">
+  <img src="../a/ext-parking2.jpg" alt="" aria-hidden="true" loading="lazy">
+  <div class="wrap">
+    <div>
+      <img class="flogo" src="../yaar-colors/assets/logo-cream.png" alt="כרמלה בשרים">
+      <p style="margin-top:16px">גריל ישראלי כשר באור יהודה.<br>לאפות מהטאבון. בשר מהגריל. אנשים סביב השולחן.</p>
+    </div>
+    <div>
+      <h4>מגיעים לכרמלה</h4>
+      <p>החרושת 16, אור יהודה<br>מיקוד <bdi>60211</bdi><br>חניה חינם בשפע ליד המסעדה</p>
+      <div class="nav-btns">
+        <a href="https://www.waze.com/he/live-map/directions?to=ll.32.021177%2C34.862559" target="_blank" rel="noopener">Waze</a>
+        <a href="https://maps.google.com/maps?cid=1078968960158689684" target="_blank" rel="noopener">Google Maps</a>
+      </div>
+    </div>
+    <div>
+      <h4>שעות פתיחה</h4>
+      <ul class="hrs">
+        <li><span>ראשון עד חמישי</span><span><bdi>11:00–00:00</bdi></span></li>
+        <li><span>שישי</span><span><bdi>11:00</bdi> עד חצי שעה לפני שבת</span></li>
+        <li><span>מוצאי שבת</span><span>חצי שעה אחרי צאת שבת עד <bdi>00:00</bdi></span></li>
+      </ul>
+    </div>
+    <div>
+      <h4>לתיאום אירוע</h4>
+      <p>משה, תיאום אירועים<br><a class="link-u" href="tel:+97235407787"><bdi>03-540-7787</bdi></a></p>
+      <p style="margin-top:12px">כשרות הרבנות אור יהודה</p>
+    </div>
+  </div>
+  <div class="bar"><div class="wrap"><span>© כרמלה בשרים · גריל ישראלי · אור יהודה</span><span>תצוגה לאישור · עיצוב ופיתוח: תומאסו</span></div></div>
+</footer>
+
+<div class="float" aria-label="יצירת קשר מהירה">
+  <a href="https://wa.me/972505473128?text=%D7%A9%D7%9C%D7%95%D7%9D%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A4%D7%A8%D7%98%D7%99%D7%9D%20%D7%A2%D7%9C%20%D7%90%D7%99%D7%A8%D7%95%D7%A2%20%D7%91%D7%9B%D7%A8%D7%9E%D7%9C%D7%94%20%D7%91%D7%A9%D7%A8%D7%99%D7%9D" target="_blank" rel="noopener" aria-label="וואטסאפ לתיאום אירוע"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.3z"/></svg></a>
+  <a href="tel:+97235407787" aria-label="חיוג למסעדה"><svg viewBox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 006.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 013 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg></a>
+</div>
+
+<div class="mcta" id="mcta">
+  <a class="btn btn-sand" href="#contact">לתיאום אירוע</a>
+  <a class="btn btn-line wa" style="color:#fff" href="https://wa.me/972505473128?text=%D7%A9%D7%9C%D7%95%D7%9D%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A4%D7%A8%D7%98%D7%99%D7%9D%20%D7%A2%D7%9C%20%D7%90%D7%99%D7%A8%D7%95%D7%A2%20%D7%91%D7%9B%D7%A8%D7%9E%D7%9C%D7%94%20%D7%91%D7%A9%D7%A8%D7%99%D7%9D" target="_blank" rel="noopener" aria-label="וואטסאפ"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.3z"/></svg></a>
+  <a class="btn btn-line" style="color:#fff" href="tel:+97235407787">חיוג</a>
+</div>
+
+<script src="../yaar-colors/assets/tomaso-a11y.js" defer></script>
+<script>
+(function(){
+  var top=document.getElementById('top'),mcta=document.getElementById('mcta'),hero=document.querySelector('.hero');
+  function onScroll(){var y=window.scrollY;top.classList.toggle('scrolled',y>40);mcta.classList.toggle('show',y>hero.offsetHeight*0.7)}
+  window.addEventListener('scroll',onScroll,{passive:true});onScroll();
+
+  var v=document.getElementById('heroVid');
+  var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(!reduce){v.src=window.innerWidth<760?'../v/place-mob.mp4':'../v/place-desk.mp4';var p=v.play();if(p&&p.catch)p.catch(function(){})}else{v.remove()}
+
+  var io='IntersectionObserver' in window?new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12,rootMargin:'0px 0px -40px 0px'}):null;
+  document.querySelectorAll('.rv').forEach(function(el,i){if(io){el.style.transitionDelay=((i%4)*70)+'ms';io.observe(el)}else el.classList.add('in')});
+
+  var links=[].slice.call(document.querySelectorAll('.top nav a'));
+  var secs=links.map(function(a){return document.querySelector(a.getAttribute('href'))});
+  if(io){var so=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){links.forEach(function(a){a.classList.toggle('on',a.getAttribute('href')==='#'+e.target.id)})}})},{rootMargin:'-45% 0px -50% 0px'});secs.forEach(function(s){s&&so.observe(s)})}
+
+  document.getElementById('evForm').addEventListener('submit',function(e){
+    e.preventDefault();var f=e.target;
+    var t=(f.querySelector('input[name=type]:checked')||{}).value||'';
+    var d=f.date.value?f.date.value.split('-').reverse().join('.'):'';
+    var lines=['שלום משה, אשמח לתאם אירוע בכרמלה בשרים.'];
+    if(f.name.value.trim())lines.push('שם: '+f.name.value.trim());
+    if(t)lines.push('סוג האירוע: '+t);
+    if(d)lines.push('תאריך משוער: '+d);
+    if(f.guests.value)lines.push('מספר אורחים: '+f.guests.value);
+    window.open('https://wa.me/972505473128?text='+encodeURIComponent(lines.join('\n')),'_blank','noopener');
+    document.getElementById('ready').hidden=false;
+  });
+})();
+</script>
+</body>
+</html>
